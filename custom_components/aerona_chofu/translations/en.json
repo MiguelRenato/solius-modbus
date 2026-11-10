@@ -1,0 +1,120 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Modbus connection",
+        "description": "Choose the mode configured on your RS-485 adapter.",
+        "data": {
+          "transport": "Connection type"
+        }
+      },
+      "connection": {
+        "title": "Connection settings",
+        "data": {
+          "host": "Gateway IP address or hostname",
+          "port": "TCP port",
+          "serial_port": "Serial device path",
+          "baudrate": "Baud rate",
+          "parity": "Parity",
+          "stopbits": "Stop bits",
+          "unit_id": "Modbus unit ID",
+          "poll_interval": "Update interval (seconds)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not read the heat pump over Modbus. Check the connection settings, gateway mode and unit ID.",
+      "invalid_endpoint": "Enter a hostname, IP address or serial device path."
+    },
+    "abort": {
+      "already_configured": "This Modbus device is already configured.",
+      "already_in_progress": "Setup for this Modbus device is already in progress."
+    }
+  },
+  "selector": {
+    "transport": {
+      "options": {
+        "tcp": "Modbus TCP",
+        "rtu_tcp": "Modbus RTU over TCP",
+        "serial": "Modbus RTU (USB/RS-485)"
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "return_water": {
+        "name": "Return water temperature"
+      },
+      "compressor_frequency": {
+        "name": "Compressor frequency"
+      },
+      "discharge": {
+        "name": "Discharge temperature"
+      },
+      "electrical_power": {
+        "name": "Reported electrical power"
+      },
+      "fan_speed": {
+        "name": "Fan speed"
+      },
+      "defrost": {
+        "name": "Defrost sensor temperature"
+      },
+      "outdoor_air": {
+        "name": "Outdoor air temperature"
+      },
+      "water_pump_speed": {
+        "name": "Water pump speed"
+      },
+      "suction": {
+        "name": "Suction temperature"
+      },
+      "flow_water": {
+        "name": "Flow water temperature"
+      },
+      "zone_1_target": {
+        "name": "Zone 1 room temperature target"
+      },
+      "zone_2_target": {
+        "name": "Zone 2 room temperature target"
+      },
+      "dhw_tank": {
+        "name": "DHW tank temperature"
+      },
+      "buffer_tank": {
+        "name": "Buffer tank temperature"
+      },
+      "plate_exchanger": {
+        "name": "Plate heat exchanger temperature"
+      },
+      "indoor_zone_1": {
+        "name": "Zone 1 room temperature"
+      },
+      "water_delta": {
+        "name": "Water temperature difference"
+      },
+      "dhw_mode": {
+        "name": "DHW mode",
+        "state": {
+          "off": "Off",
+          "comfort": "Comfort",
+          "economy": "Economy",
+          "forced": "Forced"
+        }
+      },
+      "selected_mode": {
+        "name": "Operating mode",
+        "state": {
+          "off": "Off",
+          "heating": "Heating",
+          "cooling": "Cooling"
+        }
+      }
+    },
+    "binary_sensor": {
+      "compressor_running": {
+        "name": "Compressor running"
+      }
+    }
+  }
+}

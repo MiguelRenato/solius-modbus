@@ -1,0 +1,13 @@
+{
+  "domain": "aerona_chofu",
+  "name": "Solius Modbus",
+  "after_dependencies": ["modbus"],
+  "codeowners": [],
+  "config_flow": true,
+  "documentation": "https://github.com/aerona-chofu-ashp/modbus",
+  "integration_type": "device",
+  "iot_class": "local_polling",
+  "loggers": ["pymodbus"],
+  "requirements": ["pyserial==3.5"],
+  "version": "1.0.0"
+}

@@ -1,0 +1,35 @@
+views:
+  - title: Solius
+    path: aerona3-chofu-solius
+    icon: mdi:heat-pump
+    cards:
+      - type: vertical-stack
+        cards:
+          - type: heading
+            heading: Sensors
+            heading_style: title
+          - type: entities
+            show_header_toggle: false
+            entities:
+              - entity: sensor.aerona3_chofu_solius_dhw_mode
+              - entity: sensor.aerona3_chofu_solius_operating_mode
+          - type: entities
+            show_header_toggle: false
+            entities:
+              - entity: sensor.aerona3_chofu_solius_buffer_tank_temperature
+              - entity: sensor.aerona3_chofu_solius_compressor_frequency
+              - entity: binary_sensor.aerona3_chofu_solius_compressor_running
+              - entity: sensor.aerona3_chofu_solius_defrost_sensor_temperature
+              - entity: sensor.aerona3_chofu_solius_dhw_tank_temperature
+              - entity: sensor.aerona3_chofu_solius_discharge_temperature
+              - entity: sensor.aerona3_chofu_solius_fan_speed
+              - entity: sensor.aerona3_chofu_solius_flow_water_temperature
+              - entity: sensor.aerona3_chofu_solius_outdoor_air_temperature
+              - entity: sensor.aerona3_chofu_solius_plate_heat_exchanger_temperature
+              - entity: sensor.aerona3_chofu_solius_reported_electrical_power
+              - entity: sensor.aerona3_chofu_solius_return_water_temperature
+              - entity: sensor.aerona3_chofu_solius_suction_temperature
+              - entity: sensor.aerona3_chofu_solius_water_pump_speed
+              - entity: sensor.aerona3_chofu_solius_water_temperature_difference
+              - entity: sensor.aerona3_chofu_solius_zone_1_room_temperature
+              - entity: sensor.aerona3_chofu_solius_zone_1_room_temperature_target
