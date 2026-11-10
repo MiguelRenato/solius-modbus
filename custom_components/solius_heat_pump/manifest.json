@@ -1,5 +1,5 @@
 {
-  "domain": "aerona_chofu",
+  "domain": "solius_heat_pump",
   "name": "Solius Modbus",
   "after_dependencies": ["modbus"],
   "codeowners": [],
