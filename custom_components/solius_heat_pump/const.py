@@ -1,6 +1,6 @@
 """Integration constants."""
 
-DOMAIN = "aerona_chofu"
+DOMAIN = "solius_heat_pump"
 
 CONF_TRANSPORT = "transport"
 CONF_BAUDRATE = "baudrate"
